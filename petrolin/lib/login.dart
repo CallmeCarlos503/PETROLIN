@@ -21,20 +21,34 @@ class login extends StatelessWidget {
         ],
       ),
       body: Center(
-        child: listados(),
+        child: ListView(
+          
+          children: [
+            Procesos(),
+          ],
+        )
       ),
     );
   }
 }
 
-Widget listados(){
+Widget Procesos(){
   return Column(
-    mainAxisAlignment: MainAxisAlignment.start,
-    children: <Widget>[
+    mainAxisAlignment: MainAxisAlignment.center,
+    crossAxisAlignment: CrossAxisAlignment.center,
+    children: [
       Container(
-        margin: EdgeInsets.symmetric(vertical: 8.0),
+        margin: EdgeInsets.symmetric(vertical: 5),
       ),
-      Text("Listado de precios"),
+      Text('LISTA', style: TextStyle(fontSize: 30,fontFamily: "Arial" ),),
+      Column(
+        children: <Widget>[
+          Container(
+            margin: EdgeInsets.symmetric(vertical: 10),
+          ),
+
+        ],
+      ),
     ],
   );
 }
