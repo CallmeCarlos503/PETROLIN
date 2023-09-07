@@ -46,9 +46,17 @@ Widget Procesos(){
           Container(
             margin: EdgeInsets.symmetric(vertical: 10),
           ),
-
+          Contenido(),
         ],
       ),
+    ],
+  );
+}
+
+Widget Contenido(){
+  return Column(
+    children: [
+      Text('data')
     ],
   );
 }
